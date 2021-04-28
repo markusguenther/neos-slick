@@ -1,0 +1,14 @@
+version: 2
+updates:
+- package-ecosystem: composer
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  reviewers:
+  - markusguenther
+  ignore:
+  - dependency-name: carbon/includeassets
+    versions:
+    - 5.2.1
